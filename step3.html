@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>index</title>
+    <title>step3</title>
 
     <link rel="preload" href="css/normalize.css" as="style" type="text/css">
     <link rel="preload" href="css/index.css" as="style" type="text/css">
@@ -30,20 +30,23 @@
             <li class="header__langs__lang">РУС</li>
         </ul>
     </header>
-    <main class="main">
-        <div class="main__spiner"></div>
-        <h1 class="main__h1">Оффлайн интервью</h1>
-        <p class="main__text --start">Добро пожаловать в систему дистанционной оценки кандидатов на работу в ПриватБанк.
-            Пожалуйста, введите номер телефона, который Вы указали
-            в резюме.</p>
-        <form id="form" class="main__form" method="POST" onSubmit="return false;">
-            <input type="tel" class="main__form__inputTel" name="tel" placeholder="+38 (___) ___-__-__" required>
-            <button type="submit" class="main__form__btn"><img src="img/next-copy.svg"
-                    alt="изображение стрелки"></button>
-        </form>
+    <main class="main --none_img --none_height">
+        <p class="main__step">Шаг 3 из 3</p>
+
+        <h1 class="main__h1 --step">Давайте начинать!</h1>
+
+        <p class="main__text --third">Для записи ответа на вопрос нажмите на «Запись видео» и отвечайте на
+            вопрос. Учтите ограниченость времени на вопрос и используйте
+            его рационально.</p>
+
+        <div class="main__cam">
+            <video class="main__cam__video" autoplay="autoplay"></video>
+        </div>
+
+        <button class="main__button" onClick='location.href="questions1.html"'>начать интервью</button>
     </main>
 
-    <script src="js/index.js" async></script>
+    <script src="js/cam.js" async></script>
 </body>
 
 </html>

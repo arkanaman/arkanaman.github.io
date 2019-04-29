@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>step2</title>
+
+    <link rel="preload" href="css/normalize.css" as="style" type="text/css">
+    <link rel="preload" href="css/index.css" as="style" type="text/css">
+    <link rel="preload" href="css/index_768.css" media="(min-width: 425px) and (max-width: 1024px)" as="style"
+        type="text/css">
+    <link rel="preload" href="css/index_1024.css" media="(min-width: 1024px)" as="style" type="text/css">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index_768.css" media="(min-width: 425px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/index_1024.css" media="(min-width: 1025px)">
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="img/pb.svg" alt="логотип компании приват банк">
+        <ul class="header__langs">
+            <li class="header__langs__lang --active">УКР</li>
+            <li class="header__langs__lang">РУС</li>
+        </ul>
+    </header>
+    <main class="main --none_img --none_height">
+        <p class="main__step">Шаг 2 из 3</p>
+
+        <h1 class="main__h1 --step">Для успешной записи интервью:</h1>
+
+        <p class="main__text --fourth">Вам необходимо будет ответить на несколько вопросов, касающихся Вашего опыта работы.
+            <b>Интервью займет у Вас не более 15 минут.</b>
+        </p>
+
+        <p class="main__text --fourth">Сначала Вы будете видеть вопрос. На этом этапе никакой видеозаписи не ведется. У Вас есть
+            возможность подготовиться к ответу. Когда Вы будете готовы отвечать, нажимайте кнопку «Записать видео»</p>
+
+        <p class="main__text --fourth">Включится запись Вашего ответа. Обратите внимание на таймер.
+            Ответ на каждый вопрос ограничен
+            по времени! Поэтому отвечайте четко
+            на поставленный вопрос. Вопрос все время будет перед Вами, вверху страницы. Вы можете остановить запись или
+            закончить запись досрочно. Некоторые вопросы могут содержать несколько небольших
+            уточняющих вопросов-подсказок. Пожалуйста, следуйте им и отвечайте на все вопросы для полного развернутого
+            ответа. Записав ответ
+            на вопрос, у Вас будет возможность:</p>
+
+        <ul class="main__list_two">
+            <li class="main__list_two__item"><span class="main__list_two__item__text">просмотреть свой ответ</span></li>
+            <li class="main__list_two__item"><span class="main__list_two__item__text">1 раз его перезаписать</span></li>
+        </ul>
+
+        <div class="main__cam">
+            <video class="main__cam__video" autoplay="autoplay"></video>
+        </div>
+
+        <button class="main__button" onClick='location.href="step3.html"'>продолжить</button>
+    </main>
+
+    <script src="js/cam.js" async></script>
+</body>
+
+</html>

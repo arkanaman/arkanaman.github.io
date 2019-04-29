@@ -1,0 +1,149 @@
+@media (min-width: 1024px) {
+    .header {
+        min-height: 7.2265vh;
+    }
+
+    .main {
+        background: url('../img/depositphotos-117989744-xl-2015-1.jpg') no-repeat center/cover;
+        min-height: 92.7vh;
+        padding-top: 15vh;
+        padding-left: 20vw;
+        position: relative;
+
+        &__h1 {
+            font-size: 3.5rem;
+        }
+
+        &__h1.--step {
+            margin: 0 0 3.125vh;
+        }
+
+        &__h1.--final {
+            max-width: 35%;
+            margin-bottom: 1.7569vh;
+        }
+
+        &__text {
+            font-size: 1.0625rem;
+        }
+
+        .main__text.--start {
+            width: 30vw;
+        }
+
+        &__text.--first {
+            margin: 0 0 2.4414vh;
+        }
+
+        &__text.--second {
+            margin: 0 0 2.7343vh;
+            line-height: 1.41;
+            width: 50%;
+        }
+
+        &__text.--third {
+            width: 40%;
+        }
+
+        &__text.--fourth {
+            margin: 0 0 2.7343vh;
+            line-height: 1.41;
+            width: 40%;
+        }
+
+        &__text.--final {
+            max-width: 32%;
+        }
+
+        &__line_recruiter {
+            max-width: 25%;
+        }
+
+        &__form {
+
+            &__inputTel,
+            &__inputNumber {
+                width: 26%;
+            }
+
+            &__btn {
+                left: calc(26% - 2.5vw);
+            }
+        }
+
+        &__info {
+            max-width: 60%;
+            font-size: 0.8125rem;
+        }
+
+        &__list_two {
+            margin-bottom: 2vh;
+        }
+
+        &__number_list {
+            &__item {
+                margin-bottom: 2vh;
+            }
+
+            &__item:last-child {
+                margin-bottom: 3.5156vh;
+            }
+        }
+
+        &__remember {
+            margin-bottom: 2.34375vh;
+            width: 30%;
+        }
+
+        &__rest_time {
+            position: absolute;
+            top: 9vh;
+            right: 15%;
+        }
+
+        &__popup {
+            &__wrapper {
+                width: 23%;
+                margin: 30vh auto;
+                padding-bottom: 4.1015625vh;
+
+                &__header {
+                    margin-bottom: 2.1484375vh;
+                }
+                &__text {
+                    margin-bottom: 5.46875vh;
+                }
+            }
+        }
+
+        &__cam {
+            position: absolute;
+            width: 30%;
+            top: 15vh;
+            right: 15%;
+        }
+
+        &__cam.--stop::before {
+            padding-top: 36%;
+        }
+
+        &__cam.--stop::after {
+            top: 35%;
+        }
+
+        &__button {
+            width: 31.5%;
+        }
+
+        &__button.--record {
+            justify-content: center;
+        }
+    }
+
+    .img_mail {
+        position: absolute;
+        width: 20%;
+        top: 15vh;
+        left: 55vw;
+    }
+}

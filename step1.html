@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>step1</title>
+
+    <link rel="preload" href="css/normalize.css" as="style" type="text/css">
+    <link rel="preload" href="css/index.css" as="style" type="text/css">
+    <link rel="preload" href="css/index_768.css" media="(min-width: 425px) and (max-width: 1024px)" as="style"
+        type="text/css">
+    <link rel="preload" href="css/index_1024.css" media="(min-width: 1024px)" as="style" type="text/css">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index_768.css" media="(min-width: 425px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/index_1024.css" media="(min-width: 1025px)">
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="img/pb.svg" alt="логотип компании приват банк">
+        <ul class="header__langs">
+            <li class="header__langs__lang --active">УКР</li>
+            <li class="header__langs__lang">РУС</li>
+        </ul>
+    </header>
+    <main class="main --none_img --none_height">
+
+        <p class="main__step">Шаг 1 из 3</p>
+
+        <h1 class="main__h1 --step">Настройки подключения</h1>
+
+        <p class="main__text --first">Для проведения видеозаписи нам необходимо получить доступ:</p>
+
+        <ul class="main__list">
+            <li class="main__list__item"><img src="img/camera.svg" alt="камера"><span class="main__list__item__text">доступ к камере</span></li>
+            <li class="main__list__item"><img src="img/micro.svg" alt="микрофон"><span class="main__list__item__text">доступ к микрофону</span></li>
+        </ul>
+
+        <p class="main__text --second">Для корректной работы
+                системы, пожалуйста, нажмите “Разрешить” в открывшемся диалоговом окне. В случае, если
+                у вас более одной камеры или микрофона, выберите те, которые необходимы в выпадающем списке.</p>
+
+        <button class="main__button" onClick='location.href="step2.html"'>продолжить</button>
+
+    </main>
+
+</body>
+
+</html>

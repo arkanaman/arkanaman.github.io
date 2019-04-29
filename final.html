@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>index</title>
+    <title>final</title>
 
     <link rel="preload" href="css/normalize.css" as="style" type="text/css">
     <link rel="preload" href="css/index.css" as="style" type="text/css">
@@ -30,20 +30,31 @@
             <li class="header__langs__lang">РУС</li>
         </ul>
     </header>
-    <main class="main">
-        <div class="main__spiner"></div>
-        <h1 class="main__h1">Оффлайн интервью</h1>
-        <p class="main__text --start">Добро пожаловать в систему дистанционной оценки кандидатов на работу в ПриватБанк.
-            Пожалуйста, введите номер телефона, который Вы указали
-            в резюме.</p>
-        <form id="form" class="main__form" method="POST" onSubmit="return false;">
-            <input type="tel" class="main__form__inputTel" name="tel" placeholder="+38 (___) ___-__-__" required>
-            <button type="submit" class="main__form__btn"><img src="img/next-copy.svg"
-                    alt="изображение стрелки"></button>
-        </form>
-    </main>
+    <main class="main --none_img --final">
 
-    <script src="js/index.js" async></script>
+        <h1 class="main__h1 --final">Благодарим за
+            уделенное время!
+            Спасибо за интерес
+            к нашим вакансиям.</h1>
+
+        <p class="main__text --first --final">В течении 3 рабочих дней с Вами свяжется рукретер и сообщит реузльтаты оффлайн
+            собеседования.</p>
+
+        <h5 class="main__h5">Рекрутер</h5>
+
+        <hr class="main__line_recruiter">
+
+        <ul class="main__list_recruiter">
+            <li class="main__list_recruiter__item">Довгая Инна Павловна</li>
+            <li class="main__list_recruiter__item">+38 (067) 188-44-13</li>
+            <li class="main__list_recruiter__item">InnaDovgaya@gmail.com</li>
+        </ul>
+    </main>
+    <picture>
+        <source media="(min-width: 1025px)" srcset="img/173-3.jpg">
+        <source media="(min-width: 425px)" srcset="img/173-3-copy@2x.jpg">
+        <img src="img/173-3-copy.jpg" alt="Chris standing up holding his daughter Elva" class="img_mail">
+    </picture>
 </body>
 
 </html>

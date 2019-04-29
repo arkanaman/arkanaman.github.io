@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+    <g fill="#FFF" fill-rule="evenodd">
+        <rect width="7.529" height="21.333" x="60.235" opacity=".3" rx="3.765"/>
+        <rect width="7.529" height="21.333" x="60.235" y="106.667" opacity=".9" rx="3.765"/>
+        <rect width="7.529" height="21.333" x="113.569" y="53.333" opacity=".6" rx="3.765" transform="rotate(90 117.333 64)"/>
+        <rect width="7.529" height="21.333" x="6.902" y="53.333" opacity=".05" rx="3.765" transform="rotate(90 10.667 64)"/>
+        <rect width="7.529" height="21.333" x="106.493" y="26.79" opacity=".5" rx="3.765" transform="rotate(60 110.257 37.456)"/>
+        <rect width="7.529" height="21.333" x="13.63" y="79.496" opacity=".03" rx="3.765" transform="rotate(60 17.394 90.162)"/>
+        <rect width="7.529" height="21.333" x="86.398" y="6.728" opacity=".4" rx="3.765" transform="rotate(30 90.162 17.394)"/>
+        <rect width="7.529" height="21.333" x="33.692" y="99.591" rx="3.765" transform="rotate(30 37.456 110.257)"/>
+        <rect width="7.529" height="21.333" x="33.692" y="6.728" opacity=".2" rx="3.765" transform="rotate(-30 37.456 17.394)"/>
+        <rect width="7.529" height="21.333" x="86.398" y="99.591" opacity=".8" rx="3.765" transform="rotate(-30 90.162 110.257)"/>
+        <rect width="7.529" height="21.333" x="13.63" y="26.79" opacity=".1" rx="3.765" transform="rotate(-60 17.394 37.456)"/>
+        <rect width="7.529" height="21.333" x="106.493" y="79.496" opacity=".7" rx="3.765" transform="rotate(-60 110.257 90.162)"/>
+    </g>
+</svg>
