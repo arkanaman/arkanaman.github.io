@@ -48,7 +48,7 @@ inputBtn.addEventListener('click', function () {
     if (inputNum.value.length == 4) {
         var xhr = new XMLHttpRequest();
         xhr.responseType = 'json';
-        xhr.open('POST', 'http://httpbin.org/delay/5');
+        xhr.open('POST', 'https://httpbin.org/delay/5');
         xhr.send();
         document.querySelector(".main__spiner").classList.add('d-block');
         xhr.onload = function () {
