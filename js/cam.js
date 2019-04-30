@@ -1,20 +1,24 @@
-navigator.getUserMedia = navigator.getUserMedia ||
-    navigator.webkitGetUserMedia ||
-    navigator.mozGetUserMedia;
+cam();
+function cam() {
+   navigator.getUserMedia = navigator.getUserMedia ||
+      navigator.webkitGetUserMedia ||
+      navigator.mozGetUserMedia;
 
-if (navigator.getUserMedia) {
-    navigator.getUserMedia({ audio: true, video: { width: 1280, height: 720 } },
-        function (stream) {
+   if (navigator.getUserMedia) {
+      navigator.getUserMedia({ audio: true, video: { width: 1280, height: 720 } },
+         function (stream) {
             var video = document.querySelector('.main__cam__video');
             video.srcObject = stream;
             video.onloadedmetadata = function (e) {
-                video.play();
+               video.play();
             };
-        },
-        function (err) {
-            console.log("The following error occurred: " + err.name);
-        }
-    );
-} else {
-    console.log("getUserMedia not supported");
+         },
+         function (err) {
+            console.log("The following error occurred: " + err);
+         }
+      );
+   } else {
+      console.log("getUserMedia not supported");
+   }
+
 }

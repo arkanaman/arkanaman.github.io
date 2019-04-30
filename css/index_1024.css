@@ -1,57 +1,46 @@
 @media (min-width: 1024px) {
-  .header {
-    min-height: 7.2265vh;
-  }
   .main {
     background: url("../img/depositphotos-117989744-xl-2015-1.jpg") no-repeat center/cover;
-    min-height: 92.7vh;
-    padding-top: 15vh;
-    padding-left: 20vw;
     position: relative;
+    padding: 10% 25% 0 15%;
   }
   .main__h1 {
     font-size: 3.5rem;
   }
-  .main__h1.--step {
-    margin: 0 0 3.125vh;
-  }
   .main__h1.--final {
-    max-width: 35%;
-    margin-bottom: 1.7569vh;
+    max-width: 60%;
   }
   .main__text {
     font-size: 1.0625rem;
   }
-  .main .main__text.--start {
-    width: 30vw;
-  }
-  .main__text.--first {
-    margin: 0 0 2.4414vh;
+  .main__text.--start {
+    max-width: 80%;
   }
   .main__text.--second {
-    margin: 0 0 2.7343vh;
     line-height: 1.41;
-    width: 50%;
+    max-width: 585px;
   }
   .main__text.--third {
-    width: 40%;
+    width: 60%;
   }
   .main__text.--fourth {
-    margin: 0 0 2.7343vh;
     line-height: 1.41;
-    width: 40%;
+    width: 60%;
   }
   .main__text.--final {
-    max-width: 32%;
+    max-width: 60%;
   }
   .main__line_recruiter {
-    max-width: 25%;
+    max-width: 40%;
   }
-  .main__form__inputTel, .main__form__inputNumber {
-    width: 26%;
+  .main__number_list {
+    max-width: 60%;
+  }
+  .main__form {
+    max-width: 50%;
   }
   .main__form__btn {
-    left: calc(26% - 2.5vw);
+    left: calc(100% - 50px);
   }
   .main__info {
     max-width: 60%;
@@ -60,46 +49,31 @@
   .main__list_two {
     margin-bottom: 2vh;
   }
-  .main__number_list__item {
-    margin-bottom: 2vh;
-  }
-  .main__number_list__item:last-child {
-    margin-bottom: 3.5156vh;
-  }
   .main__remember {
     margin-bottom: 2.34375vh;
-    width: 30%;
+    width: 50%;
   }
   .main__rest_time {
     position: absolute;
-    top: 9vh;
+    top: 16vh;
     right: 15%;
   }
   .main__popup__wrapper {
-    width: 23%;
+    width: 40%;
     margin: 30vh auto;
-    padding-bottom: 4.1015625vh;
   }
-  .main__popup__wrapper__header {
-    margin-bottom: 2.1484375vh;
-  }
-  .main__popup__wrapper__text {
-    margin-bottom: 5.46875vh;
+  .main__popup__wrapper__flex {
+    display: flex;
+    flex-direction: row-reverse;
   }
   .main__cam {
     position: absolute;
     width: 30%;
-    top: 15vh;
+    top: 22vh;
     right: 15%;
   }
-  .main__cam.--stop::before {
-    padding-top: 36%;
-  }
-  .main__cam.--stop::after {
-    top: 35%;
-  }
   .main__button {
-    width: 31.5%;
+    width: 53%;
   }
   .main__button.--record {
     justify-content: center;

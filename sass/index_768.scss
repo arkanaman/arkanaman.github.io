@@ -1,30 +1,21 @@
 @media (min-width: 425px) and (max-width: 1024px) {
-    .header {
-        min-height: 7.2265vh;
+    .main.--mid_device {
+        width: 60%;
+        margin: auto;
     }
 
     .main {
         background: url('../img/group-2@2x.jpg') no-repeat center/cover;
-        min-height: 92.7735vh;
 
         &__h1 {
             font-size: 2.9rem;
-        }
-
-        &__h1.--step {
-            margin: 0 0 3.125vh;
         }
 
         &__text {
             font-size: 1.0625rem;
         }
 
-        &__text.--first {
-            margin: 0 0 2.4414vh;
-        }
-
         &__text.--second {
-            margin: 0 0 2.7343vh;
             line-height: 1.41;
         }
 
@@ -45,43 +36,19 @@
             font-size: 0.8125rem;
         }
 
-        &__list_two {
-            margin-bottom: 2vh;
-        }
-
-        &__number_list {
-            &__item {
-                margin-bottom: 2vh;
-            }
-
-            &__item:last-child {
-                margin-bottom: 3.5156vh;
-            }
-        }
-
-        &__remember {
-            margin-bottom: 2.34375vh;
-        }
-
         &__popup {
             &__wrapper {
                 width: 59%;
                 margin: 30vh auto;
-                &__header {
-                    margin-bottom: 2.1484375vh;
-                }
-                &__text {
-                    margin-bottom: 5.46875vh;
-                }
             }
         }
 
         &__cam.--stop::before {
-            padding-top: 36%;
+            padding-top: 40%;
         }
 
         &__cam.--stop::after {
-            top: 35%;
+            margin-top: 15%;
         }
 
         &__button.--record {

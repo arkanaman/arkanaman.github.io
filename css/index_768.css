@@ -1,25 +1,18 @@
 @media (min-width: 425px) and (max-width: 1024px) {
-  .header {
-    min-height: 7.2265vh;
+  .main.--mid_device {
+    width: 60%;
+    margin: auto;
   }
   .main {
     background: url("../img/group-2@2x.jpg") no-repeat center/cover;
-    min-height: 92.7735vh;
   }
   .main__h1 {
     font-size: 2.9rem;
   }
-  .main__h1.--step {
-    margin: 0 0 3.125vh;
-  }
   .main__text {
     font-size: 1.0625rem;
   }
-  .main__text.--first {
-    margin: 0 0 2.4414vh;
-  }
   .main__text.--second {
-    margin: 0 0 2.7343vh;
     line-height: 1.41;
   }
   .main__form__inputTel, .main__form__inputNumber {
@@ -32,33 +25,15 @@
     max-width: 60%;
     font-size: 0.8125rem;
   }
-  .main__list_two {
-    margin-bottom: 2vh;
-  }
-  .main__number_list__item {
-    margin-bottom: 2vh;
-  }
-  .main__number_list__item:last-child {
-    margin-bottom: 3.5156vh;
-  }
-  .main__remember {
-    margin-bottom: 2.34375vh;
-  }
   .main__popup__wrapper {
     width: 59%;
     margin: 30vh auto;
   }
-  .main__popup__wrapper__header {
-    margin-bottom: 2.1484375vh;
-  }
-  .main__popup__wrapper__text {
-    margin-bottom: 5.46875vh;
-  }
   .main__cam.--stop::before {
-    padding-top: 36%;
+    padding-top: 40%;
   }
   .main__cam.--stop::after {
-    top: 35%;
+    margin-top: 15%;
   }
   .main__button.--record {
     justify-content: center;

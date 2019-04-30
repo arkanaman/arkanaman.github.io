@@ -13,24 +13,29 @@ inputNum.addEventListener('keyup', function () {
     this.value = r;
 });
 
-timer();
-function timer() {
-    var time = 3;
+var timer = new Timer();
+timer.start();
+
+function Timer() {
     var div = document.querySelector(".main__info__time__timer");
-    var setInt = setInterval(function () {
-        var seconds = time % 60;
-        var min = time / 60 | 0;
-        time--;
-        if (seconds < 10) {
-            div.childNodes[0].nodeValue= min + ':0' + seconds;
-        } else {
-            div.childNodes[0].nodeValue= min + ':' + seconds;
-        }        
-        if (time < 0) {
-            clearInterval(setInt);
-            callMe();
-        }
-    }, 1000);
+    var setInt;
+    var time = 3;
+    this.start = function () {
+        setInt = setInterval(function () {
+            var seconds = time % 60;
+            var min = time / 60 | 0;
+            time--;
+            if (seconds < 10) {
+                div.childNodes[0].nodeValue = min + ':0' + seconds;
+            } else {
+                div.childNodes[0].nodeValue = min + ':' + seconds;
+            }
+            if (time < 0) {
+                clearInterval(setInt);
+                callMe();
+            }
+        }, 1000);
+    };
 }
 
 function callMe() {
@@ -38,7 +43,7 @@ function callMe() {
     infoCallMe.classList.add('d-flex');
 }
 
-infoCallMe.addEventListener('click', function () {    
+infoCallMe.addEventListener('click', function () {
     infoCallMe.classList.remove('d-flex');
     infoCallMe.classList.add('d-none');
     infoCallBank.classList.add('d-flex');
@@ -52,7 +57,7 @@ inputBtn.addEventListener('click', function () {
         xhr.send();
         document.querySelector(".main__spiner").classList.add('d-block');
         xhr.onload = function () {
-            location.href="step1.html"
+            location.href = "step1.html"
             console.dir(this);
         }
 
