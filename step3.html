@@ -7,46 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>step3</title>
+    <title>step2</title>
 
     <link rel="preload" href="css/normalize.css" as="style" type="text/css">
     <link rel="preload" href="css/index.css" as="style" type="text/css">
-    <link rel="preload" href="css/index_768.css" media="(min-width: 425px) and (max-width: 1024px)" as="style"
+    <link rel="preload" href="css/index_576.css" media="(min-width: 576px) and (max-width: 767px)" as="style"
         type="text/css">
-    <link rel="preload" href="css/index_1024.css" media="(min-width: 1024px)" as="style" type="text/css">
+    <link rel="preload" href="css/index_768.css" media="(min-width: 768px) and (max-width: 991px)" as="style"
+        type="text/css">
+    <link rel="preload" href="css/index_992.css" media="(min-width: 992px) and (max-width: 1199px)" as="style"
+        type="text/css">
+    <link rel="preload" href="css/index_1200.css" media="(min-width: 1200px)" as="style" type="text/css">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/index_768.css" media="(min-width: 425px) and (max-width: 1024px)">
-    <link rel="stylesheet" href="css/index_1024.css" media="(min-width: 1025px)">
+    <link rel="stylesheet" href="css/index_576.css" media="(min-width: 576px) and (max-width: 767px)">
+    <link rel="stylesheet" href="css/index_768.css" media="(min-width: 768px) and (max-width: 991px)">
+    <link rel="stylesheet" href="css/index_992.css" media="(min-width: 992px) and (max-width: 1199px)">
+    <link rel="stylesheet" href="css/index_1200.css" media="(min-width: 1200px)">
 
 </head>
 
 <body>
+    <div class="spiner"></div>
     <header class="header">
-        <img src="img/pb.svg" alt="логотип компании приват банк">
-        <ul class="header__langs">
-            <li class="header__langs__lang --active">УКР</li>
-            <li class="header__langs__lang">РУС</li>
-        </ul>
-    </header>
-    <main class="main --none_img --none_height --mid_device">
-        <p class="main__step">Шаг 3 из 3</p>
-
-        <h1 class="main__h1 --step">Давайте начинать!</h1>
-
-        <p class="main__text --third">Для записи ответа на вопрос нажмите на «Запись видео» и отвечайте на
-            вопрос. Учтите ограниченость времени на вопрос и используйте
-            его рационально.</p>
-
-        <div class="main__cam">
-            <video class="main__cam__video" autoplay="autoplay"></video>
+        <div class="container">
+            <div class="header__row">
+                <img class="header__logo" src="img/pb.svg" alt="логотип компании приват банк">
+                <ul class="header__list_langs">
+                    <li class="header__list_langs__item">УКР</li>
+                    <li class="header__list_langs__item --active">РУС</li>
+                </ul>
+            </div>
         </div>
+    </header>
+    <main class="main --step_two --none_img">
+        <div class="container">
+            <div class="main__row">
+                <div class="main__col_one">
+                    <p class="main__step">Шаг 3 из 3</p>
 
-        <button class="main__button" onClick='location.href="questions1.html"'>начать интервью</button>
+                    <h1 class="main__h1 --step">Давайте начинать!</h1>
+
+                    <p class="main__text --step">Для записи ответа на вопрос нажмите на «Запись видео» и отвечайте на
+                        вопрос. Учтите ограниченость времени на вопрос и используйте
+                        его рационально.</p>
+                </div>
+                <div class="main__col_two">
+                    <div class="main__cam">
+                        <video class="main__cam__video" autoplay="autoplay"></video>
+                    </div>
+                </div>
+                <div class="main__col_btn">
+                    <button class="main__button" onClick='location.href="questions1.html"'>продолжить</button>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <script src="js/cam.js" async></script>
+    <script src="js/cam.js"></script>
 </body>
 
 </html>

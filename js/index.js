@@ -1,8 +1,7 @@
-var form = document.querySelector(".main__form");
-var inputTel = document.querySelector(".main__form__inputTel");
+var inputTel = document.querySelector(".main__form__tel");
 var inputBtn = document.querySelector(".main__form__btn");
 
-inputTel.addEventListener('keyup', function () {
+inputTel.addEventListener("input", function () {
     var r = this.value.replace(/\D/g, "");
     r = r.replace(/^.{2}/, '');
     if (r.length > 8) {
@@ -22,10 +21,11 @@ inputBtn.addEventListener('click', function () {
         var xhr = new XMLHttpRequest();
         xhr.responseType = 'json';
         xhr.open('POST', 'https://httpbin.org/delay/5');
-        xhr.send();
-        document.querySelector(".main__spiner").classList.add('d-block');
+        xhr.send(inputTel.value);
+        document.querySelector(".spiner").classList.add('d-block');
+
         xhr.onload = function () {
-            location.href="code.html"
+            location.href = "code.html"
             console.dir(this);
         }
 
@@ -36,5 +36,6 @@ inputBtn.addEventListener('click', function () {
     } else {
         console.log('error');
     }
-
 });
+
+

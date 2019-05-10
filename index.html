@@ -11,39 +11,63 @@
 
     <link rel="preload" href="css/normalize.css" as="style" type="text/css">
     <link rel="preload" href="css/index.css" as="style" type="text/css">
-    <link rel="preload" href="css/index_768.css" media="(min-width: 425px) and (max-width: 1024px)" as="style"
+    <link rel="preload" href="css/index_576.css" media="(min-width: 576px) and (max-width: 767px)" as="style"
         type="text/css">
-    <link rel="preload" href="css/index_1024.css" media="(min-width: 1024px)" as="style" type="text/css">
+    <link rel="preload" href="css/index_768.css" media="(min-width: 768px) and (max-width: 991px)" as="style"
+        type="text/css">
+    <link rel="preload" href="css/index_992.css" media="(min-width: 992px) and (max-width: 1199px)" as="style"
+        type="text/css">
+    <link rel="preload" href="css/index_1200.css" media="(min-width: 1200px)" as="style" type="text/css">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/index_768.css" media="(min-width: 425px) and (max-width: 1024px)">
-    <link rel="stylesheet" href="css/index_1024.css" media="(min-width: 1025px)">
+    <link rel="stylesheet" href="css/index_576.css" media="(min-width: 576px) and (max-width: 767px)">
+    <link rel="stylesheet" href="css/index_768.css" media="(min-width: 768px) and (max-width: 991px)">
+    <link rel="stylesheet" href="css/index_992.css" media="(min-width: 992px) and (max-width: 1199px)">
+    <link rel="stylesheet" href="css/index_1200.css" media="(min-width: 1200px)">
 
 </head>
 
 <body>
+
+    <div class="spiner"></div>
+
     <header class="header">
-        <img src="img/pb.svg" alt="логотип компании приват банк">
-        <ul class="header__langs">
-            <li class="header__langs__lang --active">УКР</li>
-            <li class="header__langs__lang">РУС</li>
-        </ul>
+        <div class="container">
+            <div class="header__row">
+                <img class="header__logo" src="img/pb.svg" alt="логотип компании приват банк">
+                <ul class="header__list_langs">
+                    <li class="header__list_langs__item">УКР</li>
+                    <li class="header__list_langs__item --active">РУС</li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <main class="main">
-        <div class="main__spiner"></div>
-        <h1 class="main__h1">Оффлайн интервью</h1>
-        <p class="main__text --start">Добро пожаловать в систему дистанционной оценки кандидатов на работу в ПриватБанк.
-            Пожалуйста, введите номер телефона, который Вы указали
-            в резюме.</p>
-        <form id="form" class="main__form" method="POST" onSubmit="return false;">
-            <input type="tel" class="main__form__inputTel" name="tel" placeholder="+38 (___) ___-__-__" required>
-            <button type="submit" class="main__form__btn"><img src="img/next-copy.svg"
-                    alt="изображение стрелки"></button>
-        </form>
+
+    <main class="main --index">
+        <div class="container">
+            <div class="main__row">
+                <div class="main__col">
+                    <h1 class="main__h1 --index">Оффлайн интервью</h1>
+                    <p class="main__p --index">Добро пожаловать в систему дистанционной оценки кандидатов на работу в
+                        ПриватБанк.
+                        Пожалуйста, введите номер телефона, который Вы указали
+                        в резюме.</p>
+                    <form class="main__form" method="post" onSubmit="return false;">
+                        <div class="main__form__wrapper">
+                            <input class="main__form__tel" type="tel" name="tel" placeholder="+38 (___) ___-__-__"
+                                required>
+                            <button type="submit" class="main__form__btn"><img src="img/next-copy.svg"
+                                    alt="изображение стрелки"></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <script src="js/index.js" async></script>
+    <script src="js/index.js"></script>
+
 </body>
 
 </html>

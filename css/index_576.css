@@ -1,0 +1,9 @@
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    width: 80%;
+  }
+  .main__popup__wrapper {
+    max-width: 360px;
+    left: calc(50% - 190px);
+  }
+}

@@ -11,57 +11,84 @@
 
     <link rel="preload" href="css/normalize.css" as="style" type="text/css">
     <link rel="preload" href="css/index.css" as="style" type="text/css">
-    <link rel="preload" href="css/index_768.css" media="(min-width: 425px) and (max-width: 1024px)" as="style"
+    <link rel="preload" href="css/index_576.css" media="(min-width: 576px) and (max-width: 767px)" as="style"
         type="text/css">
-    <link rel="preload" href="css/index_1024.css" media="(min-width: 1024px)" as="style" type="text/css">
+    <link rel="preload" href="css/index_768.css" media="(min-width: 768px) and (max-width: 991px)" as="style"
+        type="text/css">
+    <link rel="preload" href="css/index_992.css" media="(min-width: 992px) and (max-width: 1199px)" as="style"
+        type="text/css">
+    <link rel="preload" href="css/index_1200.css" media="(min-width: 1200px)" as="style" type="text/css">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/index_768.css" media="(min-width: 425px) and (max-width: 1024px)">
-    <link rel="stylesheet" href="css/index_1024.css" media="(min-width: 1025px)">
+    <link rel="stylesheet" href="css/index_576.css" media="(min-width: 576px) and (max-width: 767px)">
+    <link rel="stylesheet" href="css/index_768.css" media="(min-width: 768px) and (max-width: 991px)">
+    <link rel="stylesheet" href="css/index_992.css" media="(min-width: 992px) and (max-width: 1199px)">
+    <link rel="stylesheet" href="css/index_1200.css" media="(min-width: 1200px)">
 
 </head>
 
 <body>
+
+    <div class="spiner"></div>
+
     <header class="header">
-        <img src="img/pb.svg" alt="логотип компании приват банк">
-        <ul class="header__langs">
-            <li class="header__langs__lang --active">УКР</li>
-            <li class="header__langs__lang">РУС</li>
-        </ul>
+        <div class="container">
+            <div class="header__row">
+                <img class="header__logo" src="img/pb.svg" alt="логотип компании приват банк">
+                <ul class="header__list_langs">
+                    <li class="header__list_langs__item">УКР</li>
+                    <li class="header__list_langs__item --active">РУС</li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <main class="main">
-        <div class="main__spiner"></div>
-        <h1 class="main__h1">Оффлайн интервью</h1>
-        <p class="main__text --start">Добро пожаловать в систему дистанционной оценки кандидатов на работу в ПриватБанк.
-            Пожалуйста, введите номер телефона, который Вы указали
-            в резюме.</p>
-        <form class="main__form" method="POST" onSubmit="return false;">
-            <input type="number" class="main__form__inputNumber" name="tel" placeholder="Введите ОТП-пароль" required>
-            <button type="submit" class="main__form__btn"><img src="img/next-copy.svg"
-                    alt="изображение стрелки"></button>
-        </form>
-        <div class="main__info">
-            <p class="main__info__number">На номер <span class="main__info__first__tel">+38(063) 111-22-33</span> был
-                отправлен SMS
-                пароль. Сообщение может прийти в Приват24,
-                Sender или в виде SMS сообщения.</p>
-            <p class="main__info__time">Через <span class="main__info__time__timer">1:30</span> Вы сможете
-                подтвердить вход
-                при помощи звонка.</p>
-            <p class="main__info__callMe">
-                <img class="main__info__callMe__img" src="img/phoneicon.svg" alt="иконка телефона">
-                <span>Позвоните мне</span>
-            </p>
-            <p class="main__info__callBank">
-                <span class="main__info__callBank__pulse">
-                    <img class="main__info__callBank__pulse__img" src="img/phoneicon.svg" alt="иконка телефона">
-                </span>
-                <span>Вас вызывает <br> +3809100011924</span>
-            </p>
+
+    <main class="main --index">
+        <div class="container">
+            <div class="main__row">
+                <div class="main__col">
+                    <h1 class="main__h1 --index">Оффлайн интервью</h1>
+                    <p class="main__p --index">Добро пожаловать в систему дистанционной оценки кандидатов на работу в
+                        ПриватБанк.
+                        Пожалуйста, введите номер телефона, который Вы указали
+                        в резюме.</p>
+                    <form class="main__form" method="post" onSubmit="return false;">
+                        <div class="main__form__wrapper">
+                            <input class="main__form__number" type="number" name="number" placeholder="" required>
+                            <button type="submit" class="main__form__btn"><img src="img/next-copy.svg"
+                                    alt="изображение стрелки"></button>
+                        </div>
+                    </form>
+                    <div class="main__info">
+                        <p class="main__info__number">На номер <span class="main__info__first__tel">+38(063)
+                                111-22-33</span>
+                            был
+                            отправлен SMS
+                            пароль. Сообщение может прийти в Приват24,
+                            Sender или в виде SMS сообщения.</p>
+                        <p class="main__info__time">Через <span class="main__info__time__timer">1:30</span> Вы сможете
+                            подтвердить вход
+                            при помощи звонка.</p>
+                        <p class="main__info__callMe">
+                            <img class="main__info__callMe__img" src="img/phoneicon.svg" alt="иконка телефона">
+                            <span>Позвоните мне</span>
+                        </p>
+                        <p class="main__info__callBank">
+                            <span class="main__info__callBank__pulse">
+                                <img class="main__info__callBank__pulse__img" src="img/phoneicon.svg"
+                                    alt="иконка телефона">
+                            </span>
+                            <span>Вас вызывает <br> +3809100011924</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-    <script src="js/code.js" async></script>
+
+    <script src="js/code.js"></script>
+
 </body>
 
 </html>

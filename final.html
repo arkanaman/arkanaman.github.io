@@ -11,50 +11,70 @@
 
     <link rel="preload" href="css/normalize.css" as="style" type="text/css">
     <link rel="preload" href="css/index.css" as="style" type="text/css">
-    <link rel="preload" href="css/index_768.css" media="(min-width: 425px) and (max-width: 1024px)" as="style"
+    <link rel="preload" href="css/index_576.css" media="(min-width: 576px) and (max-width: 767px)" as="style"
         type="text/css">
-    <link rel="preload" href="css/index_1024.css" media="(min-width: 1024px)" as="style" type="text/css">
+    <link rel="preload" href="css/index_768.css" media="(min-width: 768px) and (max-width: 991px)" as="style"
+        type="text/css">
+    <link rel="preload" href="css/index_992.css" media="(min-width: 992px) and (max-width: 1199px)" as="style"
+        type="text/css">
+    <link rel="preload" href="css/index_1200.css" media="(min-width: 1200px)" as="style" type="text/css">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/index_768.css" media="(min-width: 425px) and (max-width: 1024px)">
-    <link rel="stylesheet" href="css/index_1024.css" media="(min-width: 1025px)">
+    <link rel="stylesheet" href="css/index_576.css" media="(min-width: 576px) and (max-width: 767px)">
+    <link rel="stylesheet" href="css/index_768.css" media="(min-width: 768px) and (max-width: 991px)">
+    <link rel="stylesheet" href="css/index_992.css" media="(min-width: 992px) and (max-width: 1199px)">
+    <link rel="stylesheet" href="css/index_1200.css" media="(min-width: 1200px)">
 
 </head>
 
 <body>
+    <div class="spiner"></div>
     <header class="header">
-        <img src="img/pb.svg" alt="логотип компании приват банк">
-        <ul class="header__langs">
-            <li class="header__langs__lang --active">УКР</li>
-            <li class="header__langs__lang">РУС</li>
-        </ul>
+        <div class="container">
+            <div class="header__row">
+                <img class="header__logo" src="img/pb.svg" alt="логотип компании приват банк">
+                <ul class="header__list_langs">
+                    <li class="header__list_langs__item">УКР</li>
+                    <li class="header__list_langs__item --active">РУС</li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <main class="main --none_img --none_height">
+    <main class="main --final --none_img">
+        <div class="container">
+            <div class="main__row">
+                <div class="main__col_one">
+                    <h1 class="main__h1 --final">Благодарим за
+                        уделенное время!
+                        Спасибо за интерес
+                        к нашим вакансиям.</h1>
 
-        <h1 class="main__h1 --final">Благодарим за
-            уделенное время!
-            Спасибо за интерес
-            к нашим вакансиям.</h1>
+                    <p class="main__p --index">В течении 3 рабочих дней с Вами свяжется рукретер и сообщит
+                        реузльтаты оффлайн
+                        собеседования.</p>
 
-        <p class="main__text --first --final">В течении 3 рабочих дней с Вами свяжется рукретер и сообщит реузльтаты оффлайн
-            собеседования.</p>
+                    <h4 class="main__h4 --final">Рекрутер</h5>
 
-        <h5 class="main__h5">Рекрутер</h5>
+                        <hr class="main__line_recruiter">
 
-        <hr class="main__line_recruiter">
-
-        <ul class="main__list_recruiter">
-            <li class="main__list_recruiter__item">Довгая Инна Павловна</li>
-            <li class="main__list_recruiter__item">+38 (067) 188-44-13</li>
-            <li class="main__list_recruiter__item">InnaDovgaya@gmail.com</li>
-        </ul>
+                        <ul class="main__list_recruiter">
+                            <li class="main__list_recruiter__item">Довгая Инна Павловна</li>
+                            <li class="main__list_recruiter__item">+38 (067) 188-44-13</li>
+                            <li class="main__list_recruiter__item">InnaDovgaya@gmail.com</li>
+                        </ul>
+                </div>
+                <div class="main__col_two">
+                    <picture>
+                        <source media="(min-width: 1025px)" srcset="img/173-3.jpg">
+                        <source media="(min-width: 425px)" srcset="img/173-3-copy@2x.jpg">
+                        <img src="img/173-3-copy.jpg" alt="Chris standing up holding his daughter Elva"
+                            class="img_mail">
+                    </picture>
+                </div>
+            </div>
+        </div>
     </main>
-    <picture>
-        <source media="(min-width: 1025px)" srcset="img/173-3.jpg">
-        <source media="(min-width: 425px)" srcset="img/173-3-copy@2x.jpg">
-        <img src="img/173-3-copy.jpg" alt="Chris standing up holding his daughter Elva" class="img_mail">
-    </picture>
 </body>
 
 </html>
