@@ -8,11 +8,11 @@ var nextBtn = document.querySelector('.main__button.--next');
 var mainCam = document.querySelector('.main__cam');
 var mainPopup = document.querySelector('.main__popup');
 var mainWatch = document.querySelector('.main__cam__watch');
-
+var video = document.querySelector('.main__cam__video');
 var cam = new cam();
+
 cam.showCam();
-function cam() {
-    var video = document.querySelector('.main__cam__video');
+function cam() {    
     var recordedBlobs;
     var mediaRecorder;
     var options = {
@@ -54,7 +54,6 @@ function cam() {
     }
 
     this.startRecording = function () {
-        console.log(video.srcObject);
         video.controls = false;
         recordedBlobs = [];
         mediaRecorder = new MediaRecorder(window.stream, options);
@@ -124,6 +123,7 @@ startBtn.addEventListener('click', function () {
     stopBtn.classList.add('d-flex');
     pauseBtn.classList.add('d-flex');
     document.querySelector('.main__rest_time').classList.add('d-flex');
+    mainCam.classList.remove('--start');
     mainCam.classList.add('--record');
     timer.start();
     cam.checkUserMedia();
@@ -136,7 +136,6 @@ stopBtn.addEventListener('click', function () {
     overwriteBtn.classList.add('d-flex');
     nextBtn.classList.add('d-block');
     mainCam.classList.remove('--pause', '--record');
-    mainCam.classList.add('--stop');
     mainWatch.classList.add('d-block');
     timer.stop();
     timer.resetTime();
@@ -176,6 +175,11 @@ document.querySelector('.main__popup__wrapper__flex__button.--owerwrite').addEve
     mainCam.classList.remove('--stop', '--pause', '--record');
     mainPopup.classList.add('d-none');
     mainPopup.classList.remove('d-block');
+    mainCam.classList.add('--start');
+    document.querySelector('.main__cam__watch').classList.remove('d-block');
+    document.querySelector('.main__cam__watch').classList.add('d-none');
+    video.controls = false;
+    cam.showCam();
 });
 
 document.querySelector('.main__popup__wrapper__flex__button.--clear').addEventListener('click', function () {

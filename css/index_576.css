@@ -2,6 +2,9 @@
   .container {
     width: 80%;
   }
+  .main {
+    background: url("../img/group-2@2x.jpg") no-repeat center/cover;
+  }
   .main__popup__wrapper {
     max-width: 360px;
     left: calc(50% - 190px);

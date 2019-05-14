@@ -11,6 +11,8 @@
 
     <link rel="preload" href="css/normalize.css" as="style" type="text/css">
     <link rel="preload" href="css/index.css" as="style" type="text/css">
+    <link rel="preload" href="css/index_h.css" media="(max-height: 650px)" as="style"
+        type="text/css">
     <link rel="preload" href="css/index_576.css" media="(min-width: 576px) and (max-width: 767px)" as="style"
         type="text/css">
     <link rel="preload" href="css/index_768.css" media="(min-width: 768px) and (max-width: 991px)" as="style"
@@ -21,6 +23,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index_h.css">
     <link rel="stylesheet" href="css/index_576.css" media="(min-width: 576px) and (max-width: 767px)">
     <link rel="stylesheet" href="css/index_768.css" media="(min-width: 768px) and (max-width: 991px)">
     <link rel="stylesheet" href="css/index_992.css" media="(min-width: 992px) and (max-width: 1199px)">
@@ -33,7 +36,7 @@
     <header class="header">
         <div class="container">
             <div class="header__row">
-                <img class="header__logo" src="img/pb.svg" alt="логотип компании приват банк">
+                <img intrinsicSize="155x27" class="header__logo" src="img/pb.svg" alt="логотип компании приват банк">
                 <ul class="header__list_langs">
                     <li class="header__list_langs__item">УКР</li>
                     <li class="header__list_langs__item --active">РУС</li>
@@ -41,6 +44,7 @@
             </div>
         </div>
     </header>
+
     <main class="main --final --none_img">
         <div class="container">
             <div class="main__row">
@@ -66,8 +70,8 @@
                 </div>
                 <div class="main__col_two">
                     <picture>
-                        <source media="(min-width: 1025px)" srcset="img/173-3.jpg">
-                        <source media="(min-width: 425px)" srcset="img/173-3-copy@2x.jpg">
+                        <source media="(min-width: 992px)" srcset="img/173-3.jpg">
+                        <source media="(min-width: 576px)" srcset="img/173-3-copy@2x.jpg">
                         <img src="img/173-3-copy.jpg" alt="Chris standing up holding his daughter Elva"
                             class="img_mail">
                     </picture>
@@ -75,6 +79,7 @@
             </div>
         </div>
     </main>
+
 </body>
 
 </html>
