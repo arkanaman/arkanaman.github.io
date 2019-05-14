@@ -19,36 +19,6 @@ html {
   --coral: #ff4343;
 }
 
-@font-face {
-  font-family: 'OpenSans';
-  src: url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'NotoSans';
-  src: url("../fonts/NotoSans-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 400;
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: 'NotoSans';
-  src: url("../fonts/NotoSans-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 700;
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
 @-webkit-keyframes spinAfter {
   from {
     transform: rotateZ(0deg);
@@ -149,7 +119,7 @@ html {
 }
 
 body {
-  font-family: OpenSans, Arial, sans-serif;
+  font-family: Open Sans, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -258,7 +228,7 @@ body {
 }
 
 .main__p.--index {
-  font-family: NotoSans;
+  font-family: Noto Sans;
   font-size: 0.9375rem;
   color: var(--brownish-grey);
   margin: 0 0 1.5rem;
@@ -308,7 +278,7 @@ body {
 }
 
 .main__form__tel, .main__form__number {
-  font-family: NotoSans;
+  font-family: Noto Sans;
   font-size: 0.9375rem;
   padding: 1.063rem 1.9375rem;
   color: var(--greyish-brown);
@@ -335,7 +305,7 @@ body {
 }
 
 .main__info {
-  font-family: NotoSans;
+  font-family: Noto Sans;
   font-size: 0.75rem;
   color: #232332;
 }
@@ -493,7 +463,7 @@ body {
 }
 
 .main__rest_time__text {
-  font-family: NotoSans;
+  font-family: Noto Sans;
   font-size: 0.9375rem;
   line-height: 1.2;
   color: var(--greyish-brown-two);
@@ -501,7 +471,7 @@ body {
 }
 
 .main__rest_time__time {
-  font-family: NotoSans;
+  font-family: Noto Sans;
   font-size: 22px;
   font-weight: bold;
   color: var(--greyish-brown-two);
@@ -542,7 +512,7 @@ body {
   left: calc(50% - 70px);
   top: calc(50% - 70px);
   text-align: center;
-  font-family: NotoSans;
+  font-family: Noto Sans;
   font-size: 0.875rem;
   color: #fff;
   font-weight: normal;
@@ -641,7 +611,7 @@ body {
 }
 
 .main__popup__wrapper__text {
-  font-family: NotoSans;
+  font-family: Noto Sans;
   font-size: 0.9375rem;
   line-height: 1.47;
   text-align: center;
@@ -650,7 +620,7 @@ body {
 }
 
 .main__popup__wrapper__flex__button {
-  font-family: NotoSans;
+  font-family: Noto Sans;
   font-size: 0.875rem;
   font-weight: bold;
   text-align: center;
@@ -684,7 +654,7 @@ body {
 }
 
 .main__button {
-  font-family: NotoSans;
+  font-family: Noto Sans;
   display: block;
   font-size: 0.875rem;
   font-weight: bold;
