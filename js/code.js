@@ -4,22 +4,20 @@ var inputBtn = document.querySelector(".main__form__btn");
 var infoCallMe = document.querySelector(".main__info__callMe");
 var infoTime = document.querySelector(".main__info__time");
 var infoCallBank = document.querySelector(".main__info__callBank");
+var number = 4;
 
 inputNum.addEventListener('input', function () {
     var r = this.value;
-    if (r.length > 4) {
-        r = r.slice(0, -r.length + 4);
+    if (r.length > number) {
+        r = r.slice(0, -r.length + number);
     }
     this.value = r;
 });
 
-var timer = new Timer();
-timer.start();
-
-function Timer() {
+function Timer(time) {
     var div = document.querySelector(".main__info__time__timer");
     var setInt;
-    var time = 3;
+    var time = time;
     this.start = function () {
         setInt = setInterval(function () {
             var seconds = time % 60;
@@ -37,6 +35,8 @@ function Timer() {
         }, 1000);
     };
 }
+var timer = new Timer(5);
+timer.start();
 
 function callMe() {
     infoTime.classList.add('d-none');
@@ -63,10 +63,10 @@ infoCallMe.addEventListener('click', function () {
 });
 
 inputBtn.addEventListener('click', function () {
-    if (inputNum.value.length == 4) {
+    if (inputNum.value.length == number) {
         var xhr = new XMLHttpRequest();
         xhr.responseType = 'json';
-        xhr.open('POST', 'https://httpbin.org/delay/5');
+        xhr.open('POST', 'https://httpbin.org/delay/1');
         xhr.send(inputNum.value);
         document.querySelector(".spiner").classList.add('d-block');
         xhr.onload = function () {
